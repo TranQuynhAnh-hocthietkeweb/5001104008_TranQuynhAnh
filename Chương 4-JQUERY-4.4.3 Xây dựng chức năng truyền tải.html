@@ -1,0 +1,16 @@
+<script src="jquery-3.7.0.min.js"></script>
+<script>
+  var i = 10;
+  $(document).ready(function (e) {
+    $("#btnLeft").click(function (e) { 
+      $(".slideshow_inner").animate({ 
+        marginLeft: i-= 250 
+      }, 500);
+    });
+    $("#btnRight").click(function (e) {
+      $(".slideshow_inner").animate({ 
+        marginLeft: i += 250 
+      }, 500);
+    });
+  });
+</script>
